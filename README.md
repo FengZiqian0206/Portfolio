@@ -2,13 +2,15 @@
 
 在线作品集：**https://fengziqian0206.github.io/Portfolio/**
 
+英文简历（可直接查看和下载）：**https://fengziqian0206.github.io/Portfolio/assets/Ziqian_Feng_CV.pdf**
+
 由原始 `FengZiqian.pdf` 转换，完整保留 36 页作品及原始排版。打开链接即可上下滚动浏览，无需登录或安装阅读器。
 
 - 项目目录可直接跳转到 7 个作品。
 - 点击画面可进入放大视图，再点击「放大细节」查看高清原图。
 - 放大后用滚轮、触控板或手机滑动查看局部；点击「适合屏幕」恢复全页。
 - 放大视图支持上一页、下一页和 Esc 关闭。
-- 页眉可下载原始 PDF。
+- 页眉的 **Download CV** 可下载英文简历。
 
 ## 项目
 
@@ -32,6 +34,7 @@
 - `assets/pages/01.webp` 至 `36.webp`：浏览图片（最长边 1800px）。
 - `assets/pages/01-large.webp` 至 `36-large.webp`：高清图片（最长边 4200px）。
 - `assets/FengZiqian.pdf`：原始作品集。
+- `assets/Ziqian_Feng_CV.pdf`：英文简历原始 PDF。
 
 GitHub Pages 发布源为 `main` 分支根目录。修改文件并提交后会自动重新发布。
 
