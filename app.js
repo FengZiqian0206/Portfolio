@@ -6,7 +6,7 @@ const title = document.querySelector('#viewer-title');
 const zoom = document.querySelector('#zoom');
 const previous = document.querySelector('#previous');
 const next = document.querySelector('#next');
-const index = document.querySelector('.index');
+const menus = [...document.querySelectorAll('.menu')];
 let current = 0;
 
 function showPage(number) {
@@ -52,9 +52,9 @@ viewer.addEventListener('keydown', (event) => {
   if (event.key === 'ArrowLeft') { event.preventDefault(); showPage(current - 1); }
   if (event.key === 'ArrowRight') { event.preventDefault(); showPage(current + 1); }
 });
-index.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { index.open = false; }));
-document.addEventListener('click', event => { if (!index.contains(event.target)) index.open = false; });
-document.addEventListener('keydown', event => { if (event.key === 'Escape') index.open = false; });
+menus.forEach(menu => menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { menu.open = false; })));
+document.addEventListener('click', event => menus.forEach(menu => { if (!menu.contains(event.target)) menu.open = false; }));
+document.addEventListener('keydown', event => { if (event.key === 'Escape') menus.forEach(menu => { menu.open = false; }); });
 document.querySelectorAll('.page img').forEach(img => img.addEventListener('error', () => {
   const figure = img.closest('figure');
   if (figure.querySelector('.image-error')) return;
